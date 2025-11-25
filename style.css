@@ -2,8 +2,13 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     padding: 50px;
-    background: #f4f4f4;
+
+    background-image: url("https://wallpapers.com/images/featured/vocabulary-pictures-74taflxkevgfs8mv.jpg");
+     background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
+
 
 #wordInput {
     padding: 10px;
