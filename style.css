@@ -1,28 +1,75 @@
+/* Full background image */
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 50px;
-
-    background-image: url("https://wallpapers.com/images/featured/vocabulary-pictures-74taflxkevgfs8mv.jpg");
-     background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1503264116251-35a269479413");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Glassmorphism box */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px black;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 
 #wordInput {
-    padding: 10px;
-    width: 250px;
-    margin-bottom: 100px;
+    width: 65%;
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    background: #ffd740;
     cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
+button:hover {
+    background: #ffeb3b;
+    transform: scale(1.05);
+}
+
+/* Meaning box */
 #result {
-    margin-top: 20px;
+    margin-top: 15px;
+    color: white;
     font-size: 18px;
-    font-weight: bold;
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(5px);
 }

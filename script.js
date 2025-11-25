@@ -7,12 +7,11 @@ async function getMeaning() {
         return;
     }
 
-    resultBox.innerText = "Loading...";
+    resultBox.innerText = "Searching...";
 
     try {
         const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
         
-        // If API returns 404
         if (!res.ok) {
             resultBox.innerText = "No meaning found!";
             return;
@@ -24,7 +23,6 @@ async function getMeaning() {
         resultBox.innerText = meaning;
 
     } catch (error) {
-        resultBox.innerText = "Error fetching meaning!";
-        console.log(error);
+        resultBox.innerText = "Error connecting to API!";
     }
 }
